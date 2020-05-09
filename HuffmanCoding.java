@@ -34,7 +34,7 @@ public class HuffmanCoding {
 
         return map;
     }
-    public  void print(HuffmanNode root,String str){
+    private  void print(HuffmanNode root,String str){
         if(root.left==null && root.right==null && Character.isLetter(root.c)){
             System.out.println(root.c+" : "+str);
             return;
